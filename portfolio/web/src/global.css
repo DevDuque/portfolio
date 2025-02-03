@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+* {
+  margin: 0;
+  padding: 0;
+
+  
+}
+
 @theme {
   --color-background: #393E41;
   --color-text-color: #E7E5DF;
