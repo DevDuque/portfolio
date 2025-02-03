@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="62" height="62" rx="31" stroke="#F8333C" stroke-width="2"/>
+<g filter="url(#filter0_i_3_2)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 16C40.8368 16 48 23.3439 48 32.4047C48 39.6511 43.4208 45.7983 37.0672 47.9695C36.256 48.1311 35.968 47.6188 35.968 47.182C35.968 46.6412 35.9872 44.8749 35.9872 42.6797C35.9872 41.1501 35.4752 40.1517 34.9008 39.6429C38.464 39.2365 42.208 37.8492 42.208 31.5484C42.208 29.7564 41.5872 28.2941 40.56 27.1453C40.7264 26.7309 41.2752 25.0623 40.4032 22.8031C40.4032 22.8031 39.0624 22.3635 36.008 24.4851C34.7296 24.1219 33.36 23.9392 32 23.9328C30.64 23.9392 29.272 24.1219 27.9952 24.4851C24.9376 22.3635 23.5936 22.8031 23.5936 22.8031C22.7248 25.0623 23.2736 26.7309 23.4384 27.1453C22.416 28.2941 21.7904 29.7564 21.7904 31.5484C21.7904 37.8332 25.5264 39.2418 29.08 39.6562C28.6224 40.0658 28.208 40.7884 28.064 41.8492C27.152 42.2684 24.8352 42.9939 23.408 40.4867C23.408 40.4867 22.5616 38.9105 20.9552 38.7953C20.9552 38.7953 19.3952 38.7746 20.8464 39.7922C20.8464 39.7922 21.8944 40.2962 22.6224 42.1922C22.6224 42.1922 23.5616 45.1201 28.0128 44.1281C28.0208 45.4993 28.0352 46.7916 28.0352 47.182C28.0352 47.6156 27.7408 48.1231 26.9424 47.9711C20.584 45.8031 16 39.6527 16 32.4047C16 23.3439 23.1648 16 32 16Z" fill="#F8333C"/>
+</g>
+<defs>
+<filter id="filter0_i_3_2" x="16" y="16" width="32" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_3_2"/>
+</filter>
+</defs>
+</svg>

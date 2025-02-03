@@ -1,15 +1,14 @@
-import Header from './components/Header'
-import './global.css'
+import "./global.css";
+import "./i18n.js";
+
+import HomePage from "./pages/HomePage";
 
 function App() {
-
   return (
     <>
-      <h2> Duque</h2>
-
-      <Header />
+      <HomePage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
