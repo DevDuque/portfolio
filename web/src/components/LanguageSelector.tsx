@@ -39,7 +39,7 @@ function LanguageSelector() {
 
       {/* Dropdown com as opções de idioma */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg border border-gray-300">
+        <div className="absolute right-0 mt-2 py-4 w-40 bg-main-text shadow-lg rounded-lg border-4 border-stroke">
           <ul>
             <li
               onClick={() => handleChangeLanguage("pt")}
