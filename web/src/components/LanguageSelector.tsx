@@ -24,7 +24,7 @@ function LanguageSelector() {
       {/* O botão de idioma com o triângulo (seta) */}
       <button
         onClick={handleToggleDropdown}
-        className="flex items-center gap-2 px-4 py-2 border-primary rounded-lg text-lg focus:outline-none"
+        className="flex items-center gap-2 p-4 border-primary rounded-lg text-lg focus:outline-none"
       >
         <img src={LanguageImage} alt="Language Icon" width={32} height={32} />
 

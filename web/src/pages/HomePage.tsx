@@ -68,17 +68,19 @@ function HomePage() {
             {/* Right Side - Image */}
             <img src={Photo} alt="Profile" className="w-1/3.5" />
           </div>
-
-          <button
-            className="text-xl py-2 px-8 border-2 border-primary rounded-3xl m-8
-          "
-          >
-            Ver Mais
-          </button>
         </div>
 
         <div className="flex flex-wrap justify-center">
           <Card />
+        </div>
+
+        <div className="flex justify-center">
+          <button
+            className="text-xl py-2 px-8 border-2 border-primary rounded-3xl m-4
+          "
+          >
+            Ver Mais
+          </button>
         </div>
 
         <Footer />
