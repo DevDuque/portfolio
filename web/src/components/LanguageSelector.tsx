@@ -28,7 +28,12 @@ function LanguageSelector() {
       >
         <img src={LanguageImage} alt="Language Icon" width={32} height={32} />
 
-        {i18n.language === "pt" ? "Português" : "English"}
+        {i18n.language === "pt"
+          ? "Português"
+          : i18n.language === "zh"
+          ? "中文"
+          : "English"}
+
         <img
           src={FaDown}
           className={`transform transition-transform duration-200 ${
@@ -47,11 +52,19 @@ function LanguageSelector() {
             >
               Português
             </li>
+
             <li
               onClick={() => handleChangeLanguage("en")}
               className="px-4 py-2 text-gray-800 cursor-pointer hover:bg-gray-200"
             >
               English
+            </li>
+
+            <li
+              onClick={() => handleChangeLanguage("en")}
+              className="px-4 py-2 text-gray-800 cursor-pointer hover:bg-gray-200"
+            >
+              中文
             </li>
           </ul>
         </div>
