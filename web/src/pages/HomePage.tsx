@@ -6,6 +6,10 @@ import Instagram from "../assets/icons/Instagram_Button.svg";
 
 import Photo from "../assets/icons/photo.png";
 
+// Cards Images
+import EasyMarketLogo from "../assets/icons/easymarket.png";
+import EasyMarketImage from "../assets/images/easydemo.png";
+
 // Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -71,7 +75,29 @@ function HomePage() {
         </div>
 
         <div className="flex flex-wrap justify-center">
-          <Card />
+          <Card
+            title="EasyMarket"
+            logo={EasyMarketLogo}
+            image={EasyMarketImage}
+            description={
+              <>
+                Minha atuação no EasyMarket foi focada no aprimoramento do
+                design e na experiência do usuário (UI e UX).
+                <br /> <br />
+                O EasyMarket tem como objetivo tornar as compras do dia a dia
+                mais práticas e organizadas.
+                <br />O aplicativo permite aos usuários criar listas de compras,
+                visualizar supermercados próximos, acompanhar seu histórico de
+                gastos e até consultar uma API para pesquisar alimentos e
+                visualizar as calorias de cada item com base em uma quantidade
+                específica de gramas, ajudando a tomar decisões mais informadas
+                sobre a alimentação.
+              </>
+            }
+            link="https://easymarket.com"
+            type="design"
+            tech={["figma"]}
+          />
         </div>
 
         <div className="flex justify-center">

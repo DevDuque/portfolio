@@ -1,63 +1,130 @@
+// Icons - Tags
+import WebTag from "../assets/icons/web_tag.svg";
+import AppleTag from "../assets/icons/apple_tag.svg";
 import DesignTag from "../assets/icons/design_tag.svg";
+import AndroidTag from "../assets/icons/mobile_tag.svg";
+
+// Icons - Tech
 import Figma from "../assets/icons/Figma.svg";
 
-import EasyMarket from "../assets/icons/easymarket.png";
-import EasyDemo from "../assets/images/easydemo.png";
+import TS from "../assets/icons/TS.svg";
+import Node from "../assets/icons/Node.svg";
+import React from "../assets/icons/React.svg";
 
-export default function Card() {
+import JS from "../assets/icons/JS.svg";
+import CSS from "../assets/icons/CSS.svg";
+import HTML from "../assets/icons/HTML.svg";
+
+import XML from "../assets/icons/XML.svg";
+import Java from "../assets/icons/Java.svg";
+
+import SQLite from "../assets/icons/SQLite.svg";
+import Firebase from "../assets/icons/Firebase.svg";
+import { ReactNode } from "react";
+
+interface CardProps {
+  title: string;
+  logo: string;
+  image: string;
+  description: ReactNode;
+  link: string;
+  type: "design" | "web" | "ios" | "android";
+  tech: string[];
+}
+
+// Mapping of project type to their corresponding icons
+const typeIcons: Record<CardProps["type"], string> = {
+  design: DesignTag,
+  web: WebTag,
+  ios: AppleTag,
+  android: AndroidTag,
+};
+
+// Mapping of technologies to their corresponding icons
+const techIcons: Record<string, string> = {
+  figma: Figma,
+
+  ts: TS,
+  node: Node,
+  react: React,
+
+  js: JS,
+  css: CSS,
+  html: HTML,
+
+  xml: XML,
+  java: Java,
+
+  sqlite: SQLite,
+  firebase: Firebase,
+};
+
+export default function Card({
+  title,
+  logo,
+  image,
+  description,
+  link,
+  type,
+  tech,
+}: CardProps) {
   return (
     <div className="flex flex-col gap-4 w-1/3 bg-background-components border-2 border-stroke p-4 rounded-2xl m-8 min-h-[400px]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <img src={EasyMarket} alt="EasyMarket Logo" width={32} height={32} />
-          <label className="text-xl font-bold">EasyMarket</label>
+          <img src={logo} alt={`${title} logo`} width={32} height={32} />
+          <label className="text-xl font-bold">{title}</label>
         </div>
-        <img src={DesignTag} alt="Design Tag" width={32} height={32} />
+        <img
+          src={typeIcons[type]}
+          alt={`${type} icon`}
+          width={32}
+          height={32}
+        />
       </div>
 
       {/* Main Content Section */}
       <div className="flex flex-col h-full">
         {/* Image Section */}
         <div className="relative h-8/10 border-2 border-primary overflow-hidden rounded-xl">
-          {/* Background Color (Bottom Layer) */}
           <div className="absolute inset-0 bg-stroke z-0"></div>
-
-          {/* Image (Above Background) */}
           <img
-            src={EasyDemo}
-            alt="Product"
+            src={image}
+            alt={`${title} image`}
             className="absolute inset-0 w-full h-full object-cover z-10"
           />
-
-          {/* Semi-Transparent Background (Above Image) */}
           <div className="absolute inset-0 bg-stroke opacity-75 z-20"></div>
 
-          {/* Description (Top Layer) */}
-          <div className="flex flex-col items-center justify-center absolute bottom-0 w-full h-1/2 bg-background opacity-70 z-30  border-t-2 border-black">
-            <p className="text-justify p-2 text-sm font-semibold h-full overflow-hidden text-ellipsis">
-              Minha atuação no EasyMarket foi focada no aprimoramento do design
-              e na experiência do usuário (UI e UX). <br />O EasyMarket tem como
-              objetivo tornar as compras do dia a dia mais práticas e
-              organizadas.
-              <br />
-              <br />O aplicativo permite aos usuários criar listas de compras,
-              visualizar supermercados próximos, acompanhar seu histórico de
-              gastos e até consultar uma API para pesquisar alimentos e
-              visualizar as calorias de cada item com base em uma quantidade
-              específica de gramas, ajudando a tomar decisões mais informadas
-              sobre a alimentação.
+          {/* Description */}
+          <div className="flex flex-col items-center justify-center absolute bottom-0 w-full h-1/2  bg-background opacity-70 z-30 border-t-4 border-black">
+            <p className="text-justify p-2 text-sm font-semibold h-7/10 overflow-hidden text-ellipsis whitespace-normal break-words">
+              {description}
             </p>
           </div>
         </div>
 
-        {/* Icon Section & Button */}
+        {/* Tech Icons Section & Button */}
         <div className="flex justify-between items-center mt-auto">
+          {/* Renderiza os ícones das tecnologias */}
           <div className="flex gap-4">
-            <img src={Figma} alt="Figma" width={48} height={48} />
+            {tech.map((techName) =>
+              techIcons[techName] ? (
+                <img
+                  key={techName}
+                  src={techIcons[techName]}
+                  alt={techName}
+                  width={48}
+                  height={48}
+                />
+              ) : null
+            )}
           </div>
 
-          <button className="text-md py-2 px-8 border-2 border-primary rounded-3xl">
+          <button
+            className="text-md py-2 px-8 border-2 border-primary rounded-3xl"
+            onClick={() => (window.location.href = link)}
+          >
             Saiba Mais
           </button>
         </div>
