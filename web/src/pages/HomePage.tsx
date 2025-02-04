@@ -15,14 +15,17 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LanguageSelector from "../components/LanguageSelector";
 import Card from "../components/Card";
+import { useTranslation } from "react-i18next";
 
 function HomePage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="flex flex-col min-h-screen">
         <Header />
 
-        <div className="flex-grow flex flex-col items-center">
+        <div className="flex-grow flex flex-col items-center gap-4">
           <div className="flex self-end p-4">
             <LanguageSelector />
           </div>
@@ -72,6 +75,8 @@ function HomePage() {
             {/* Right Side - Image */}
             <img src={Photo} alt="Profile" className="w-1/3.5" />
           </div>
+
+          <h2 className="text-2xl font-bold"> {t("main_projects")} </h2>
         </div>
 
         <div className="flex flex-wrap justify-center">
@@ -80,7 +85,8 @@ function HomePage() {
             logo={EasyMarketLogo}
             image={EasyMarketImage}
             description={
-              <>
+              <div>
+                {/* {t("easy_description")} */}
                 Minha atuação no EasyMarket foi focada no aprimoramento do
                 design e na experiência do usuário (UI e UX).
                 <br /> <br />
@@ -92,7 +98,7 @@ function HomePage() {
                 visualizar as calorias de cada item com base em uma quantidade
                 específica de gramas, ajudando a tomar decisões mais informadas
                 sobre a alimentação.
-              </>
+              </div>
             }
             link="https://easymarket.com"
             type="design"
