@@ -11,27 +11,32 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background-components flex items-center justify-between p-4 border-b-4 border-stroke">
-      <img src={Logo} alt="Logo" width={80} height={72} />
+    <div className="bg-background-components w-full p-4 border-t-4 border-stroke mt-auto">
+      <div className="flex items-center justify-between">
+        {/* Logo */}
+        <img src={Logo} alt="Logo" width={80} height={72} />
 
-      <div className="flex flex-1 justify-center items-center gap-2">
-        <p className="text-xl">{t("footer_text")}</p>
+        {/* Centered Text */}
+        <div className="flex flex-1 justify-center items-center gap-2">
+          <p className="text-xl">{t("footer_text")}</p>
 
-        <img
-          src={Heart}
-          alt=""
-          width={32}
-          height={28}
-          className="transition-transform duration-75 hover:animate-spin"
-        />
+          <img
+            src={Heart}
+            alt="Heart"
+            width={32}
+            height={28}
+            className="transition-transform duration-75 hover:animate-spin"
+          />
 
-        <p className="text-xl">{t("by_dev")}</p>
-      </div>
+          <p className="text-xl">{t("by_dev")}</p>
+        </div>
 
-      <div className="flex justify-between gap-4">
-        <img src={GitHub} alt="GitHub" width={48} height={48} />
-        <img src={Linkedin} alt="Linkedin" width={48} height={48} />
-        <img src={Instagram} alt="Instagram" width={48} height={48} />
+        {/* Icons */}
+        <div className="flex gap-4">
+          <img src={GitHub} alt="GitHub" width={48} height={48} />
+          <img src={Linkedin} alt="Linkedin" width={48} height={48} />
+          <img src={Instagram} alt="Instagram" width={48} height={48} />
+        </div>
       </div>
     </div>
   );

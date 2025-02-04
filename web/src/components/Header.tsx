@@ -6,7 +6,7 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background-components flex items-center justify-between p-4 border-b-4 border-stroke">
+    <div className="bg-background-components flex items-center justify-between p-4 border-b-4 border-stroke w-full mb-auto">
       <img src={Logo} alt="Logo" width={80} height={72} />
 
       <div className="flex flex-1 justify-center gap-24">
@@ -23,8 +23,8 @@ function Header() {
         </a>
       </div>
 
-      <button className="border-primary border-2 rounded-xl py-2 px-4">
-        Vamos Trabalhar Juntos
+      <button className="border-primary border-2 rounded-3xl py-2 px-4">
+        {t("btn_work")}
       </button>
     </div>
   );
