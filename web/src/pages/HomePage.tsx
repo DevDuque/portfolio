@@ -10,6 +10,7 @@ import Photo from "../assets/icons/photo.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LanguageSelector from "../components/LanguageSelector";
+import Card from "../components/Card";
 
 function HomePage() {
   return (
@@ -74,6 +75,10 @@ function HomePage() {
           >
             Ver Mais
           </button>
+        </div>
+
+        <div className="flex flex-wrap justify-center">
+          <Card />
         </div>
 
         <Footer />
