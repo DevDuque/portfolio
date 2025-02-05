@@ -33,9 +33,29 @@ function Footer() {
 
         {/* Icons */}
         <div className="flex gap-4">
-          <img src={GitHub} alt="GitHub" width={48} height={48} />
-          <img src={Linkedin} alt="Linkedin" width={48} height={48} />
-          <img src={Instagram} alt="Instagram" width={48} height={48} />
+          <a
+            href="https://github.com/devduque"
+            target="_blank"
+            className="w-fit cursor-pointer"
+          >
+            <img src={GitHub} alt="GitHub" width={48} height={48} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/davihgduque/"
+            target="_blank"
+            className="w-fit cursor-pointer"
+          >
+            <img src={Linkedin} alt="Linkedin" width={48} height={48} />
+          </a>
+
+          <a
+            href="https://www.instagram.com/devduque/"
+            target="_blank"
+            className="w-fit cursor-pointer"
+          >
+            <img src={Instagram} alt="Instagram" width={48} height={48} />
+          </a>
         </div>
       </div>
     </div>
