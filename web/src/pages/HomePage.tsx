@@ -4,7 +4,7 @@ import GitHub from "../assets/icons/GitHub_Button.svg";
 import Linkedin from "../assets/icons/Linkedin_Button.svg";
 import Instagram from "../assets/icons/Instagram_Button.svg";
 
-import Photo from "../assets/icons/photo.png";
+import ProfilePhoto from "../assets/icons/photo.png";
 
 // Cards Images
 import EasyMarketLogo from "../assets/icons/easymarket.png";
@@ -82,7 +82,7 @@ function HomePage() {
             </div>
 
             {/* Right Side - Image */}
-            <img src={Photo} alt="Profile" className="w-1/3.5" />
+            <img src={ProfilePhoto} alt="Profile" className="w-1/3.5" />
           </div>
 
           <h2 className="text-2xl font-bold"> {t("main_projects")} </h2>
