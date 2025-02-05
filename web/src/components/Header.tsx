@@ -14,27 +14,27 @@ function Header() {
       <div className="flex flex-1 justify-center gap-24">
         <a
           href="/journey"
-          className="text-main-text hover:border-b-4 border-primary cursor-pointer"
+          className="text-main-text font-medium text-xl  hover:border-b-4 border-primary cursor-pointer"
         >
           {t("my_journey")}
         </a>
 
         <a
           href="/projects"
-          className="text-main-text hover:border-b-4 border-primary cursor-pointer"
+          className="text-main-text font-medium text-xl hover:border-b-4 border-primary cursor-pointer"
         >
           {t("my_creations")}
         </a>
 
         <a
           href="/my-way"
-          className="text-main-text hover:border-b-4 border-primary cursor-pointer"
+          className="text-main-text font-medium text-xl hover:border-b-4 border-primary cursor-pointer"
         >
           {t("my_way")}
         </a>
       </div>
 
-      <button className="border-primary border-2 rounded-3xl py-2 px-4 cursor-pointer">
+      <button className="border-primary border-2 font-medium text-xl rounded-3xl py-2 px-4 cursor-pointer hover:bg-primary hover:border-stroke hover:text-stroke transition-colors">
         {t("btn_work")}
       </button>
     </div>

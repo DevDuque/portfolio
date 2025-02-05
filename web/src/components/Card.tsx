@@ -21,6 +21,7 @@ import Java from "../assets/icons/Java.svg";
 import SQLite from "../assets/icons/SQLite.svg";
 import Firebase from "../assets/icons/Firebase.svg";
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 interface CardProps {
   title: string;
@@ -68,6 +69,8 @@ export default function Card({
   type,
   tech,
 }: CardProps) {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-4 w-1/3 bg-background-components border-2 border-stroke p-4 rounded-2xl m-8 min-h-[400px]">
       {/* Header */}
@@ -98,7 +101,7 @@ export default function Card({
 
           {/* Description */}
           <div className="flex flex-col items-center justify-center absolute bottom-0 w-full h-1/2  bg-background opacity-70 z-30 border-t-4 border-black">
-            <p className="text-justify px-2 text-sm font- h-7/10 font-secondary font-semibold overflow-hidden text-ellipsis whitespace-normal break-words">
+            <p className="text-justify px-2 text-sm  h-full font-secondary font-semibold overflow-hidden text-ellipsis whitespace-normal break-words">
               {description}
             </p>
           </div>
@@ -121,10 +124,10 @@ export default function Card({
           </div>
 
           <button
-            className="text-md font-bold py-2 px-8 border-2 border-primary rounded-3xl"
+            className="text-md font-bold py-2 px-8 border-2 border-primary rounded-3xl cursor-pointer hover:bg-primary hover:border-stroke hover:text-stroke transition-colors"
             onClick={() => (window.location.href = link)}
           >
-            Saiba Mais
+            {t("see_more")}
           </button>
         </div>
       </div>

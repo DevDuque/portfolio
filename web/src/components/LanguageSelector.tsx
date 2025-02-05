@@ -23,7 +23,7 @@ function LanguageSelector() {
     <div className="relative inline-block">
       <button
         onClick={handleToggleDropdown}
-        className="flex items-center gap-2 p-4 border-primary rounded-lg text-lg focus:outline-none"
+        className="flex items-center gap-2 p-4 border-primary rounded-lg text-xl font-medium focus:outline-none"
       >
         <img src={LanguageImage} alt="Language Icon" width={32} height={32} />
 
@@ -48,22 +48,21 @@ function LanguageSelector() {
         >
           <ul>
             <li
-              onClick={() => handleChangeLanguage("pt")}
-              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
-            >
-              Português
-            </li>
-
-            <li
               onClick={() => handleChangeLanguage("en")}
-              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
+              className="px-4 py-2 text-main-text font-medium text-xl cursor-pointer hover:bg-stroke transition-colors"
             >
               English
             </li>
 
             <li
+              onClick={() => handleChangeLanguage("pt")}
+              className="px-4 py-2 text-main-text font-medium text-xl cursor-pointer hover:bg-stroke transition-colors"
+            >
+              Português
+            </li>
+            <li
               onClick={() => handleChangeLanguage("zh")}
-              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
+              className="px-4 py-2 text-main-text font-medium text-xl cursor-pointer hover:bg-stroke transition-colors"
             >
               中文
             </li>
