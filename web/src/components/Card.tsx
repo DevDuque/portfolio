@@ -98,7 +98,7 @@ export default function Card({
 
           {/* Description */}
           <div className="flex flex-col items-center justify-center absolute bottom-0 w-full h-1/2  bg-background opacity-70 z-30 border-t-4 border-black">
-            <p className="text-justify p-2 text-sm font-semibold h-7/10 overflow-hidden text-ellipsis whitespace-normal break-words">
+            <p className="text-justify p-2 text-sm font- h-7/10 font-secondary font-semibold overflow-hidden text-ellipsis whitespace-normal break-words">
               {description}
             </p>
           </div>
@@ -106,7 +106,6 @@ export default function Card({
 
         {/* Tech Icons Section & Button */}
         <div className="flex justify-between items-center mt-auto">
-          {/* Renderiza os ícones das tecnologias */}
           <div className="flex gap-4">
             {tech.map((techName) =>
               techIcons[techName] ? (
@@ -122,7 +121,7 @@ export default function Card({
           </div>
 
           <button
-            className="text-md py-2 px-8 border-2 border-primary rounded-3xl"
+            className="text-md font-bold py-2 px-8 border-2 border-primary rounded-3xl"
             onClick={() => (window.location.href = link)}
           >
             Saiba Mais

@@ -8,20 +8,19 @@ import LanguageImage from "../assets/icons/language_tag.svg";
 
 function LanguageSelector() {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false); // Controla a visibilidade do dropdown
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleDropdown = () => {
-    setIsOpen(!isOpen); // Alterna a visibilidade do dropdown
+    setIsOpen(!isOpen);
   };
 
   const handleChangeLanguage = (lang: string | undefined) => {
     i18n.changeLanguage(lang);
-    setIsOpen(false); // Fecha o dropdown após selecionar o idioma
+    setIsOpen(false);
   };
 
   return (
     <div className="relative inline-block">
-      {/* O botão de idioma com o triângulo (seta) */}
       <button
         onClick={handleToggleDropdown}
         className="flex items-center gap-2 p-4 border-primary rounded-lg text-lg focus:outline-none"
@@ -42,27 +41,29 @@ function LanguageSelector() {
         />
       </button>
 
-      {/* Dropdown com as opções de idioma */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 py-4 w-40 bg-main-text shadow-lg rounded-lg border-4 border-stroke">
+        <div
+          className="absolute right-0 mt-2 py-4 w-40 bg-background-components
+         shadow-lg rounded-lg border-4 border-stroke"
+        >
           <ul>
             <li
               onClick={() => handleChangeLanguage("pt")}
-              className="px-4 py-2 text-gray-800 cursor-pointer hover:bg-gray-200"
+              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
             >
               Português
             </li>
 
             <li
               onClick={() => handleChangeLanguage("en")}
-              className="px-4 py-2 text-gray-800 cursor-pointer hover:bg-gray-200"
+              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
             >
               English
             </li>
 
             <li
               onClick={() => handleChangeLanguage("en")}
-              className="px-4 py-2 text-gray-800 cursor-pointer hover:bg-gray-200"
+              className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
             >
               中文
             </li>

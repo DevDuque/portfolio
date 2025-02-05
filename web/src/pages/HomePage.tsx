@@ -85,7 +85,7 @@ function HomePage() {
             logo={EasyMarketLogo}
             image={EasyMarketImage}
             description={
-              <div>
+              <div className="h-full">
                 {/* {t("easy_description")} */}
                 Minha atuação no EasyMarket foi focada no aprimoramento do
                 design e na experiência do usuário (UI e UX).
@@ -108,7 +108,7 @@ function HomePage() {
 
         <div className="flex justify-center">
           <button
-            className="text-xl py-2 px-8 border-2 border-primary rounded-3xl m-4
+            className="text-xl font-bold py-2 px-8 border-2 border-primary rounded-3xl m-4
           "
           >
             Ver Mais
