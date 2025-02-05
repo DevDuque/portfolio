@@ -10,16 +10,25 @@ function Header() {
       <img src={Logo} alt="Logo" width={80} height={72} />
 
       <div className="flex flex-1 justify-center gap-24">
-        <a href="#" className="text-main-text hover:border-b-4 border-primary">
+        <a
+          href="/journey"
+          className="text-main-text hover:border-b-4 border-primary"
+        >
           {t("my_journey")}
         </a>
 
-        <a href="#" className="text-main-text hover:border-b-4 border-primary">
+        <a
+          href="/projects"
+          className="text-main-text hover:border-b-4 border-primary"
+        >
           {t("my_creations")}
         </a>
 
-        <a href="#" className="text-main-text hover:border-b-4 border-primary">
-          {t("btn_work")}
+        <a
+          href="/my-way"
+          className="text-main-text hover:border-b-4 border-primary"
+        >
+          {t("my_way")}
         </a>
       </div>
 

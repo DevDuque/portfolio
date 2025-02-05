@@ -43,7 +43,7 @@ function LanguageSelector() {
 
       {isOpen && (
         <div
-          className="absolute right-0 mt-2 py-4 w-40 bg-background-components
+          className="absolute right-0 mt-2  w-40 bg-background-components
          shadow-lg rounded-lg border-4 border-stroke"
         >
           <ul>
@@ -62,7 +62,7 @@ function LanguageSelector() {
             </li>
 
             <li
-              onClick={() => handleChangeLanguage("en")}
+              onClick={() => handleChangeLanguage("zh")}
               className="px-4 py-2 text-main-text cursor-pointer hover:bg-stroke transition-colors"
             >
               中文

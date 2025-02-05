@@ -10,12 +10,21 @@ import Photo from "../assets/icons/photo.png";
 import EasyMarketLogo from "../assets/icons/easymarket.png";
 import EasyMarketImage from "../assets/images/easydemo.png";
 
+import WTBLogo from "../assets/icons/wtb.png";
+import WTBImage from "../assets/images/wtbdemo.png";
+
 // Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
 import LanguageSelector from "../components/LanguageSelector";
+
 import Card from "../components/Card";
+
 import { useTranslation } from "react-i18next";
+
+// Routing
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const { t } = useTranslation();
@@ -88,7 +97,8 @@ function HomePage() {
               <div className="h-full">
                 {/* {t("easy_description")} */}
                 Minha atuação no EasyMarket foi focada no aprimoramento do
-                design e na experiência do usuário (UI e UX).
+                design e na experiência do usuário (UI e UX). <br /> Projeto
+                desenvolvido pelos meus colegas do COLTEC.
                 <br /> <br />
                 O EasyMarket tem como objetivo tornar as compras do dia a dia
                 mais práticas e organizadas.
@@ -104,15 +114,48 @@ function HomePage() {
             type="design"
             tech={["figma"]}
           />
+
+          <Card
+            title="Watching the Beat"
+            logo={WTBLogo}
+            image={WTBImage}
+            description={
+              <div className="h-full">
+                {/* {t("wtb_description")} */}
+                No projeto WTB, atuei de forma completa, desenvolvendo tanto a
+                UI e UX quanto a própria aplicação. Além disso, tomei a
+                iniciativa como líder, organizando e distribuindo as demandas
+                entre meus colegas.
+                <br /> O WTB é um aplicativo que une cinema e música, criando
+                uma experiência imersiva onde imagem e som se complementam. A
+                proposta é explorar como a música amplifica as emoções nos
+                filmes, proporcionando uma nova forma de apreciá-los.
+                <br /> <br />
+                Inicialmente, planejamos usar a API do TMDB, mas devido a
+                dificuldades técnicas, optamos por criar uma lista de filmes
+                armazenada na memória, salva no banco de dados e associada ao
+                usuário. <br />O aplicativo exibe os filmes em uma lista
+                simples, permitindo que o usuário logado adicione ao seus
+                favoritos, garantindo uma experiência personalizada e alinhada à
+                proposta original: oferecer a perfeita harmonia entre cinema e
+                música.
+              </div>
+            }
+            link="https://easymarket.com"
+            type="android"
+            tech={["xml", "java"]}
+          />
         </div>
 
         <div className="flex justify-center">
-          <button
-            className="text-xl font-bold py-2 px-8 border-2 border-primary rounded-3xl m-4
+          <Link to="/projects">
+            <button
+              className="text-xl font-bold py-2 px-8 border-2 border-primary rounded-3xl m-4
           "
-          >
-            Ver Mais
-          </button>
+            >
+              Ver Mais
+            </button>
+          </Link>
         </div>
 
         <Footer />
