@@ -34,8 +34,8 @@ function HomePage() {
       <div className="flex flex-col min-h-screen">
         <Header />
 
-        <div className="flex-grow flex flex-col items-center gap-4">
-          <div className="flex self-end p-4">
+        <div className="flex flex-grow flex-col items-center gap-4">
+          <div className="flex self-end p-5">
             <LanguageSelector />
           </div>
 
@@ -86,14 +86,14 @@ function HomePage() {
           <h2 className="text-2xl font-bold"> {t("main_projects")} </h2>
         </div>
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center w-full">
           <Card
             title="EasyMarket"
             logo={EasyMarketLogo}
             image={EasyMarketImage}
             description={
               <div className="h-full">
-                <Trans i18nKey="easy_description"></Trans>
+                <Trans i18nKey="easy_description" />
               </div>
             }
             link="https://easymarket.com"
@@ -107,7 +107,7 @@ function HomePage() {
             image={WTBImage}
             description={
               <div className="h-full">
-                <Trans i18nKey="wtb_description"></Trans>
+                <Trans i18nKey="wtb_description" />
               </div>
             }
             link="https://wtb.com"

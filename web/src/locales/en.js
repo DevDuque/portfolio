@@ -20,6 +20,10 @@ export const en = {
     main_projects: "Main Projects",
     see_more: "See more",
 
+    // ProjectsPage
+    projects_desc:
+      "I am a university student and graduated in Systems Development with an emphasis on mobile applications, passionate about creating innovative and impactful solutions. <br /> <br /> My journey in development spans the entire stack, from front-end, focusing on intuitive interfaces and engaging designs, to back-end, ensuring efficiency, scalability, and performance. <br /> <br /> Here, you will find projects that reflect my evolution as a developer, each representing challenges overcome, lessons learned, and my constant pursuit of improvement.",
+
     // Card #1
     easy_description:
       "My work at EasyMarket focused on improving design and user experience (UI and UX). <br /> Project developed by my colleagues at COLTEC. <br /> <br /> EasyMarket aims to make daily shopping more practical and organized. <br />The app allows users to create shopping lists, view nearby supermarkets, track their spending history, and even consult an API to search for food items and view the calories of each item based on a specific weight, helping users make more informed food choices.",

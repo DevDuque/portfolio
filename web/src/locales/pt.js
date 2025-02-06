@@ -20,6 +20,10 @@ export const pt = {
     main_projects: "Principais Projetos",
     see_more: "Ver Mais",
 
+    // ProjectsPage
+    projects_desc:
+      "Sou estudante universitário e formado em Desenvolvimento de Sistemas com ênfase em aplicativos móveis, apaixonado por criar soluções inovadoras e impactantes. <br /> <br /> Minha jornada no desenvolvimento abrange toda a stack, desde o front-end, focando em interfaces intuitivas e designs envolventes, até o back-end, garantindo eficiência, escalabilidade e desempenho. <br /> <br /> Aqui, você encontrará projetos que refletem minha evolução como desenvolvedor, cada um representando desafios superados,aprendizados adquiridos e minha busca constante por aprimoramento.",
+
     // Card #1
     easy_description:
       "Minha atuação no EasyMarket foi focada no aprimoramento do design e na experiência do usuário (UI e UX). <br /> Projeto desenvolvido pelos meus colegas do COLTEC. <br /> <br /> O EasyMarket tem como objetivo tornar as compras do dia a dia mais práticas e organizadas. <br />O aplicativo permite aos usuários criar listas de compras, visualizar supermercados próximos, acompanhar seu histórico de gastos e até consultar uma API para pesquisar alimentos e visualizar as calorias de cada item com base em uma quantidade específica de gramas, ajudando a tomar decisões mais informadas sobre a alimentação.",

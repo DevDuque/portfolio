@@ -72,7 +72,7 @@ export default function Card({
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col gap-4 w-1/3 bg-background-components border-2 border-stroke p-4 rounded-2xl m-8 min-h-[400px]">
+    <div className="flex flex-col gap-4 w-1/3 shadow-xl bg-background-components border-2 border-stroke p-4 rounded-2xl my-10 mx-5 min-h-[400px]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
