@@ -14,7 +14,7 @@ function Header() {
       <div className="flex flex-1 justify-center gap-24">
         <a
           href="/journey"
-          className="text-main-text font-medium text-xl  hover:border-b-4 border-primary cursor-pointer"
+          className="text-main-text font-medium text-xl hover:border-b-4 border-primary cursor-pointer"
         >
           {t("my_journey")}
         </a>

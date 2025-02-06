@@ -31,5 +31,13 @@ export const en = {
     // Card #2
     wtb_description:
       "In the WTB project, I worked end-to-end, developing both the UI and UX as well as the application itself. Additionally, I took the initiative as a leader, organizing and distributing tasks among my colleagues.<br /> <br /> WTB is an app that combines cinema and music, creating an immersive experience where image and sound complement each other. The concept is to explore how music enhances emotions in films, offering a new way to experience them. <br /> <br /> Initially, we planned to use the TMDB API, but due to technical difficulties, we decided to create a list of movies stored in memory, saved in the database, and linked to the user. <br />The app displays movies in a simple list, allowing the logged-in user to add their favorites, ensuring a personalized experience aligned with the original concept: offering the perfect harmony between cinema and music.",
+
+    // Card #3
+    habit_description:
+      "In the WTB project, I worked end-to-end, developing both the UI and UX as well as the application itself. Additionally, I took the initiative as a leader, organizing and distributing tasks among my colleagues.<br /> <br /> HabitJourney is an app designed to create and maintain healthy habits, focusing on simplicity and adapting to the user's progress. <br/> <br/> Its dynamic approach allows users to track and adjust habits intuitively, without distractions. <br/> <br/> It offers integration with the Google API to securely sync data and enable easy access across devices. It also includes a standard login option, ensuring flexibility in registration and access. <br/> <br/> With a minimalist design and straightforward functionality, HabitJourney provides a practical and efficient experience, keeping users motivated and organized in their personal growth journeys.",
+
+    // Card #4
+    xpulse_description:
+      "In the XPulse project, I worked end-to-end, developing both the UI and UX as well as the application itself. Additionally, I took the initiative as a leader, organizing and distributing tasks among my colleagues.<br /> <br /> The core concept of the application revolves around creating and participating in interactive rooms, where users can schedule competitive games, find partners to complete teams, participate in events organized by moderators or the Hub community, or simply connect with people interested in discussing various topics. <br/>  Although we initially planned to include a rewards system and Discord integration, we decided to focus on an MVP (Minimum Viable Product), prioritizing essential features to ensure a smooth and functional user experience.",
   },
 };

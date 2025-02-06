@@ -14,7 +14,13 @@ function Footer() {
     <div className="bg-background-components w-full p-4 border-t-4 border-stroke mt-auto">
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <img src={Logo} alt="Logo" width={80} height={72} />
+        <img
+          src={Logo}
+          alt="Logo"
+          width={80}
+          height={72}
+          className="cursor-pointer transition-transform hover:-translate-y-2"
+        />
 
         {/* Centered Text */}
         <div className="flex flex-1 justify-center items-center gap-2">
@@ -38,7 +44,13 @@ function Footer() {
             target="_blank"
             className="w-fit cursor-pointer"
           >
-            <img src={GitHub} alt="GitHub" width={48} height={48} />
+            <img
+              src={GitHub}
+              alt="GitHub"
+              width={48}
+              height={48}
+              className="cursor-pointer hover:brightness-0 hover:grayscale transition-transform hover:-translate-y-2"
+            />
           </a>
 
           <a
@@ -46,7 +58,13 @@ function Footer() {
             target="_blank"
             className="w-fit cursor-pointer"
           >
-            <img src={Linkedin} alt="Linkedin" width={48} height={48} />
+            <img
+              src={Linkedin}
+              alt="Linkedin"
+              width={48}
+              height={48}
+              className="cursor-pointer hover:brightness-0 hover:grayscale transition-transform hover:-translate-y-2"
+            />
           </a>
 
           <a
@@ -54,7 +72,13 @@ function Footer() {
             target="_blank"
             className="w-fit cursor-pointer"
           >
-            <img src={Instagram} alt="Instagram" width={48} height={48} />
+            <img
+              src={Instagram}
+              alt="Instagram"
+              width={48}
+              height={48}
+              className="cursor-pointer hover:brightness-0 hover:grayscale transition-transform hover:-translate-y-2"
+            />
           </a>
         </div>
       </div>

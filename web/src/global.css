@@ -6,7 +6,7 @@ body {
 
   background-color: var(--color-background);
 
-  font-family: "Bai Jamjuree";
+  font-family: "Bai Jamjuree", "sans-serif";
   color: var(--color-main-text);
 }
 

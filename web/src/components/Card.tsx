@@ -17,9 +17,11 @@ import HTML from "../assets/icons/HTML.svg";
 
 import XML from "../assets/icons/XML.svg";
 import Java from "../assets/icons/Java.svg";
+import Swift from "../assets/icons/Swift.svg";
 
 import SQLite from "../assets/icons/SQLite.svg";
 import Firebase from "../assets/icons/Firebase.svg";
+
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -55,6 +57,7 @@ const techIcons: Record<string, string> = {
 
   xml: XML,
   java: Java,
+  swift: Swift,
 
   sqlite: SQLite,
   firebase: Firebase,
@@ -72,7 +75,7 @@ export default function Card({
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col gap-4 w-1/3 shadow-xl bg-background-components border-2 border-stroke p-4 rounded-2xl my-10 mx-5 min-h-[400px]">
+    <div className="flex flex-col gap-4 w-1/3 shadow-xl bg-background-components border-2 border-stroke p-4 rounded-2xl min-h-[400px]">
       {/* Header */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
@@ -109,7 +112,7 @@ export default function Card({
 
         {/* Tech Icons Section & Button */}
         <div className="flex justify-between items-center mt-auto">
-          <div className="flex gap-4 h">
+          <div className="flex flex-wrap gap-4 h-full">
             {tech.map((techName) =>
               techIcons[techName] ? (
                 <img
@@ -118,6 +121,7 @@ export default function Card({
                   alt={techName}
                   width={48}
                   height={48}
+                  className="cursor-pointer transition-transform hover:-translate-y-1"
                 />
               ) : null
             )}
