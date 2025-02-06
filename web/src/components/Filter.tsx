@@ -36,12 +36,12 @@ function Filter() {
           <div className="relative w-full">
             <button
               onClick={() => setYearOpen(!yearOpen)}
-              className="flex items-center justify-center gap-2 py-1 w-full border-2 border-primary rounded-3xl text-lg font-medium focus:outline-none"
+              className="group flex items-center justify-center gap-2 py-1 w-full border-2 border-primary rounded-3xl text-lg font-medium focus:outline-none cursor-pointer hover:bg-primary hover:border-stroke hover:text-stroke transition-colors"
             >
               Year
               <img
                 src={FaDown}
-                className={`transform transition-transform duration-200 ${
+                className={`transform transition-transform duration-200 group-hover:brightness-0 group-hover:grayscale ${
                   yearOpen ? "rotate-180" : ""
                 }`}
               />
@@ -66,7 +66,7 @@ function Filter() {
           <div className="relative w-full">
             <button
               onClick={() => setTypeOpen(!typeOpen)}
-              className="flex items-center justify-center gap-2 py-1 w-full border-2 border-primary rounded-3xl text-lg font-medium focus:outline-none"
+              className="flex items-center justify-center gap-2 py-1 w-full border-2 border-primary rounded-3xl text-lg font-medium focus:outline-none cursor-pointer hover:bg-primary hover:border-stroke hover:text-stroke transition-colors"
             >
               Type
               <img
