@@ -6,7 +6,7 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background-components flex items-center justify-between p-4 border-b-4 border-stroke w-full mb-auto">
+    <div className="bg-background-components flex items-center justify-between p-4 border-b-4 border-stroke-secondary w-full mb-auto">
       <a href="/" className="w-fit cursor-pointer">
         <img src={Logo} alt="Logo" width={80} height={72} />
       </a>

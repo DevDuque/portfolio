@@ -11,12 +11,13 @@ body {
 }
 
 @theme {
-  --color-background: #393e41;
+  --color-background: #1F2224;
   --color-main-text: #e7e5df;
   --color-background-components: rgba(40, 44, 46, 0.75);
 
   --color-primary: #f8333c;
   --color-stroke: #1f2224;
+  --color-stroke-secondary: RGBA(233, 233, 233, 0.12);
 
   --font-primary: "Bai Jamjuree", "sans-serif";
   --font-secondary: "Asap", "sans-sefif";

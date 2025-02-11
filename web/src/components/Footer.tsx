@@ -11,7 +11,7 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background-components w-full p-4 border-t-4 border-stroke mt-auto">
+    <div className="bg-background-components w-full p-4 border-t-4 border-stroke-secondary mt-auto">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <img

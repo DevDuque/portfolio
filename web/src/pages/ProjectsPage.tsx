@@ -99,8 +99,8 @@ function ProjectsPage() {
                 </div>
               }
               link="https://wtb.com"
-              type="ios"
-              tech={["swift", "sqlite", "firebase"]}
+              type="android"
+              tech={["java", "xml"]}
             />
           </div>
         </div>
